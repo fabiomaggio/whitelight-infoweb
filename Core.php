@@ -1,7 +1,8 @@
 <?php
 namespace Infoweb;
 
-class Core {
+class Core
+{
     
     // Class constants
     const VERSION = '0.0.1';
@@ -11,7 +12,8 @@ class Core {
      * 
      * @return  string      The version number
      */
-    public static function version() {
+    public static function version()
+    {
         return self::VERSION;
     }    
 }
