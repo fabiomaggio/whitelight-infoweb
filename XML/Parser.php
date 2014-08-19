@@ -35,6 +35,7 @@ class Parser
     public function parse()
     {                
         $doc = new \DOMDocument;
+        $doc->preserveWhiteSpace = false;
         
         if (!$doc->load($this->file))
             throw new \Exception("the file \"{$file}\" can not be loaded");    
