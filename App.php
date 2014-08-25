@@ -27,6 +27,22 @@ class App
     public static $page = 0;
     
     /**
+     * @var array   A container of css files
+     */
+    public static $css = [
+        'head'  => [],
+        'foot'  => []
+    ];
+    
+    /**
+     * @var array   A container of js files
+     */
+    public static $js = [
+        'head'  => [],
+        'foot'  => []
+    ];
+    
+    /**
      * Returns the version number
      * 
      * @return  string      The version number
