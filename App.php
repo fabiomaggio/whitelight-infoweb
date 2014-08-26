@@ -98,5 +98,17 @@ class App
         }
         
         return $nextPage;     
+    }
+    
+    /**
+     * Returns the query string of the current url
+     * 
+     * example: page.php?m=3&p=2 will return m=3&p=2
+     * 
+     * @return  string
+     */
+    public static function urlQueryString()
+    {
+        return (isset($_SERVER['QUERY_STRING'])) ? $_SERVER['QUERY_STRING'] : '';
     }   
 }
